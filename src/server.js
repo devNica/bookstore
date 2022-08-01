@@ -3,14 +3,15 @@ import api from './api'
 import { constants } from './config'
 import loader from './loaders/loader'
 
-const { SERVER_PORT } = constants
+const { SERVER_PORT, MONGODB_URI } = constants
 
 function startServer () {
   const app = express()
 
   loader.init({
     expressApp: app,
-    exppressRoutes: api()
+    exppressRoutes: api(),
+    connString: MONGODB_URI
   })
 
   app.listen(SERVER_PORT, (err) => {
