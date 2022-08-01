@@ -1,0 +1,2 @@
+### server test
+GET http://localhost:6700/bookstore/v1/test HTTP/1.1
