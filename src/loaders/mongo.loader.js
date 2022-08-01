@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import '../models/index'
 
 export default async function mongoLoader (URI_DB) {
   console.log('URIDB', URI_DB)
