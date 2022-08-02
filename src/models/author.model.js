@@ -10,6 +10,13 @@ const authorSchema = new mongoose.Schema(
       type: String,
       required: true
     },
+    birthDate: {
+      type: Date,
+      required: true
+    },
+    deathDate: {
+      type: Date
+    },
     isAvailable: {
       type: Boolean,
       required: true,

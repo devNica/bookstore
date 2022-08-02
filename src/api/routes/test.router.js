@@ -17,7 +17,7 @@ testRouter.get('/test', (_req, res) => {
   res.json(info)
 })
 
-testRouter.get('/', (req, res)=>{
+testRouter.get('/', (req, res) => {
   res.render('templates/welcome')
 })
 
