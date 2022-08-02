@@ -3,6 +3,6 @@ import { constants } from '../config'
 
 export default () => {
   return [
-    { path: `${constants.PREFIX}/test`, controller: testRouter }
+    { path: `${constants.PREFIX}/`, controller: testRouter }
   ]
 }
